@@ -508,7 +508,7 @@ void gld_InitCommandLine(void)
 {
 }
 
-#define SCALE_X(x)    ((flags & VPT_STRETCH)?((float)x)*(float)SCREENWIDTH/320.0f:(float)x)
+#define SCALE_X(x)    ((flags & VPT_STRETCH)?((float)x)*(float)SCREENWIDTH/480.0f:(float)x)
 #define SCALE_Y(y)    ((flags & VPT_STRETCH)?((float)y)*(float)SCREENHEIGHT/200.0f:(float)y)
 
 void gld_DrawNumPatch(int x, int y, int lump, int cm, enum patch_translation_e flags)

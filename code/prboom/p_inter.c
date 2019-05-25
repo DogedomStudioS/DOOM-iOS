@@ -709,16 +709,17 @@ static void P_KillMobj(mobj_t *source, mobj_t *target)
   // This determines the kind of object spawned
   // during the death frame of a thing.
 
+  // Leonan 5/24/2019: Quick hack for Chex Quest
   switch (target->type)
     {
     case MT_WOLFSS:
-    case MT_POSSESSED:
+    //case MT_POSSESSED:
       item = MT_CLIP;
       break;
 
-    case MT_SHOTGUY:
-      item = MT_SHOTGUN;
-      break;
+    //case MT_SHOTGUY:
+      //item = MT_SHOTGUN;
+      //break;
 
     case MT_CHAINGUY:
       item = MT_CHAINGUN;
